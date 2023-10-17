@@ -6,13 +6,12 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
-    
+
 jobs:
   build:
     # Ubuntu, Windows, MacOS를 지원한다.
     runs-on: ubuntu-latest
 
-	    # node-version 과 같이 배열로 돼있으면, 해당 원소를 순회하면서 작업이 반복해서 실행된다.
     # matrix 때문인지 배열만 되는 것 같다. (TODO)
     # 응용해서 runs-on에 여러 OS에서 돌릴 수도 있다.
     strategy:
